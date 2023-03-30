@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fair Trade Limited</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header>
@@ -25,8 +30,37 @@
       </div>
     </header>
 
-    <div class="banner">
-      <div class="overlay"></div>
+    <div class="responsive-header">
+      <img src="img/Hamburger_icon.svg.png" alt="" />
+
+      <img class="logo" src="img/logo.png" alt="logo" />
+      <img src="img/icons8-user-30.png" alt="" />
+    </div>
+    <section class="banner">
+      <div class="overlay">
+        <div class="banner-desc">
+          <p class="quote">
+            "Create unforgettable memories with every event. Let us help you
+            find the perfect venue and bring your vision to life."
+          </p>
+
+          <form class="search-events" action="">
+            <select name="" id="">
+              <option value="">Corporate Events</option>
+              <option value="">Social Events</option>
+              <option value="">Fairs</option>
+              <option value="">Movies</option>
+            </select>
+            <select name="" id="">
+              <option value="">Movies</option>
+              <option value="">Movies</option>
+              <option value="">Movies</option>
+              <option value="">Movies</option>
+            </select>
+            <button id="btn-search-events">Search Events</button>
+          </form>
+        </div>
+      </div>
       <video
         loop
         muted
@@ -34,89 +68,72 @@
         class="banner-video"
         src="img/istockphoto-1353384232-640_adpp_is.mp4"
       ></video>
+    </section>
 
-      <div class="banner-desc">
-        <p class="quote">
-          "Create unforgettable memories with every event. Let us help you find
-          the perfect venue and bring your vision to life."
-        </p>
-
-        <form class="search-events" action="">
-          <select name="" id="">
-            <option value="">Corporate Events</option>
-            <option value="">Social Events</option>
-            <option value="">Fairs</option>
-            <option value="">Movies</option>
-          </select>
-          <select name="" id="">
-            <option value="">Movies</option>
-            <option value="">Movies</option>
-            <option value="">Movies</option>
-            <option value="">Movies</option>
-          </select>
-          <button id="btn-search-events">Search Events</button>
-        </form>
-      </div>
-    </div>
+    <!-- <marquee behavior="scroll" scrollamount="20" direction="">
+      <img src="img/event-01.jpg" alt="" />
+      <img src="img/event-01.jpg" alt="" />
+      <img src="img/event-01.jpg" alt="" />
+    </marquee> -->
 
     <div id="container">
-      <h2 id="section-header">Categories</h2>
+      <div id="section-header"><h2>Categories</h2></div>
       <section class="categories">
         <div class="categories-box">
-          <img src="img/county-fair.jpg" alt="" />
+          <img src="img/event-01.jpg" alt="" />
           <p>Events</p>
         </div>
         <div class="categories-box">
-          <img src="img/county-fair.jpg" alt="" />
+          <img src="img/event-02.jpg" alt="" />
           <p>Events</p>
         </div>
         <div class="categories-box">
-          <img src="img/county-fair.jpg" alt="" />
+          <img src="img/event-03.jpg" alt="" />
           <p>Events</p>
         </div>
         <div class="categories-box">
-          <img src="img/county-fair.jpg" alt="" />
+          <img src="img/event-04.jpg" alt="" />
           <p>Events</p>
         </div>
         <div class="categories-box">
-          <img src="img/county-fair.jpg" alt="" />
+          <img src="img/event-05.jpg" alt="" />
           <p>Events</p>
         </div>
         <div class="categories-box">
-          <img src="img/county-fair.jpg" alt="" />
+          <img src="img/event-06.jpg" alt="" />
           <p>Events</p>
         </div>
       </section>
-
-      <h2 id="section-header">Featured</h2>
-
-      <section class="featured-events">
-        <div class="featured-boxes">
-          <img src="img/county-fair.jpg" alt="" />
-          <p>Featured</p>
-        </div>
-        <div class="featured-boxes">
-          <img src="img/county-fair.jpg" alt="" />
-          <p>Featured</p>
-        </div>
-        <div class="featured-boxes">
-          <img src="img/county-fair.jpg" alt="" />
-          <p>Featured</p>
-        </div>
-        <div class="featured-boxes">
-          <img src="img/county-fair.jpg" alt="" />
-          <p>Featured</p>
-        </div>
-        <div class="featured-boxes">
-          <img src="img/county-fair.jpg" alt="" />
-          <p>Featured</p>
-        </div>
-        <div class="featured-boxes">
-          <img src="img/county-fair.jpg" alt="" />
-          <p>Featured</p>
-        </div>
-      </section>
+      <div id="section-header"">
+      <h2>Featured</h2>
     </div>
+
+    <section class="featured-events">
+      <div class="featured-boxes">
+        <img src="img/county-fair.jpg" alt="" />
+        <p>Featured</p>
+      </div>
+      <div class="featured-boxes">
+        <img src="img/county-fair.jpg" alt="" />
+        <p>Featured</p>
+      </div>
+      <div class="featured-boxes">
+        <img src="img/county-fair.jpg" alt="" />
+        <p>Featured</p>
+      </div>
+      <div class="featured-boxes">
+        <img src="img/county-fair.jpg" alt="" />
+        <p>Featured</p>
+      </div>
+      <div class="featured-boxes">
+        <img src="img/county-fair.jpg" alt="" />
+        <p>Featured</p>
+      </div>
+      <div class="featured-boxes">
+        <img src="img/county-fair.jpg" alt="" />
+        <p>Featured</p>
+      </div>
+    </section>
 
     <footer>
       <article></article>
