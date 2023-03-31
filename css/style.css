@@ -268,15 +268,33 @@ select > option {
 }
 
 footer {
-  display: flex;
-  margin-top: 20px;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: black;
+  background: #1e1f1f;
+  padding: 63px 0 20px;
 }
 
-article {
-  width: 30%;
-  height: 300px;
-  background-color: rgb(255, 255, 255);
+footer a {
+  color: white;
+}
+
+footer ul li{
+  margin: 10px 0;
+}
+
+footer .logo img{
+  width: 100%;
+}
+
+.color-white{
+  color: white;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
