@@ -9,8 +9,13 @@ a {
   color: black;
 }
 
+h2{
+  margin: 10px;
+  padding: 0;
+}
+
 #container {
-  margin-inline: 20px;
+  margin: 0 200px;
 }
 
 body {
@@ -19,21 +24,32 @@ body {
 }
 
 header {
+  margin-bottom: 10px;
+  position: fixed;
+  padding: 20px 0;
+  top: 0;
+  left: 0;
+  height: auto;
   width: 100%;
+  z-index: 1000;
+  background-color: white;
+}
+
+.navigation{
+  margin: 0 100px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 10px;
+  justify-content: space-evenly;
 }
 
 .logo {
-  width: 80px;
-  height: 80px;
-  background-color: black;
+  text-align: center;
+  /* background-color: rgb(218, 55, 55); */
 }
 
 nav {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -41,7 +57,8 @@ nav ul {
   display: flex;
   flex-direction: row;
   font-weight: bolder;
-  gap: 60px;
+  justify-content: space-evenly;
+  gap: 40px;
 }
 
 li {
@@ -59,13 +76,14 @@ nav li:hover {
 .user-account {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  gap: 20px;
 }
 
-.user-account a {
+/* .user-account a {
   margin-right: 20px;
-}
+} */
 
 .responsive-header {
   display: none;
@@ -73,12 +91,10 @@ nav li:hover {
 
 .banner {
   width: 100%;
-  height: 700px;
-  background-size: cover;
-  background-position: center;
+  height: 90vh;
+
   position: relative;
   overflow: hidden;
-  text-align: center;
 }
 
 .overlay {
@@ -90,6 +106,8 @@ nav li:hover {
   width: 100%;
   opacity: 0.86;
   z-index: 1;
+  position: relative;
+  text-align: center;
 }
 
 .banner-desc {
@@ -106,14 +124,14 @@ nav li:hover {
 }
 
 .banner-video {
-  position: fixed;
-  width: 100%;
-  height: auto;
+  min-width: 100%;
+  min-height: 100%;
   z-index: -100;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0%;
+  left: 0%;
+  /* transform: translate(-50%, -50%) scale(1.6); */
+  
 }
 
 
@@ -129,15 +147,15 @@ nav li:hover {
 
 .search-events {
   margin-top: 80px;
-  width: 80%;
+  width: 50%;
   padding: 30px;
   background-color: rgba(255, 255, 255, 0.4);
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: 70px;
+  justify-content: space-around;
   border-radius: 2px;
   align-self: center;
+  flex-wrap: wrap;
 }
 
 .search-events:hover {
@@ -215,22 +233,25 @@ select > option {
 
 .categories-box {
   width: 100%;
-  position: relative;
+  height: auto;
   opacity: 0.90;
+  position: relative;
 }
 
 .categories-box img {
   width: 100%;
   height: 100%;
-  filter: brightness(0.8);
+  filter: brightness(0.6);
 }
 
-.categories-box p {
+.categories-box span {
+  margin: 0;
+  padding: 0;
   position: absolute;
   font-size: larger;
   top: 40%;
-  left: 40%;
-  z-index: 10;
+  left: 35%;
+  transform: translate(10%,10%);
   color: aliceblue;
   font-family: "Belleza", sans-serif;
 
@@ -257,10 +278,11 @@ select > option {
   width: 100%;
 }
 
-.featured-boxes p {
+.featured-boxes span {
   position: absolute;
-  top: 26%;
-  left: 40%;
+  top: 0%;
+  left: 0%;
+  transform: translate(50%,50%);
   z-index: 10;
   color: aliceblue;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
