@@ -25,15 +25,15 @@
   }
 
   .banner {
-    margin-top: 200px;
+    /* margin-top: 200px; */
     width: 100%;
-    height: 50vh;
+    /* height: 50vh; */
   }
 
   .banner-video{
     top: 0;
     left: 0;
-    transform: translate(-9%,0);
+    transform: translate(0,0);
   }
 
 
@@ -163,11 +163,6 @@
     background-color: white;
   }
 
-  video {
-    width: 100% !important;
-    height: auto !important;
-  }
-
   .banner-video {
     position: absolute;
     z-index: -100;
@@ -179,6 +174,10 @@
 
   .categories-box{
     width: 40%;
+  }
+
+  .featured-events{
+    width: 80%;
   }
 
   /* section {
