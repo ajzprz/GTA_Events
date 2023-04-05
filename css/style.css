@@ -317,7 +317,7 @@ select > option {
 }
 
 .featured-events {
-  width: 60%;
+  width: 80%;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -327,12 +327,11 @@ select > option {
 }
 
 .featured-boxes {
-  width: 500px;
+  width: 40%;
   height: auto;
   position: relative;
   margin-bottom: -4px;
   opacity: 0.9;
-  text-align: center;
 }
 
 .featured-boxes p{
@@ -348,7 +347,7 @@ select > option {
   top: 43%;
   left: 40%;
   z-index: 0;
-  font-size: 1.6rem;
+  font-size: 20px;
   color: aliceblue;
 }
 
@@ -372,7 +371,9 @@ select > option {
 
 .featured-boxes img {
   width: 100%;
-  filter: brightness(0.8);
+  height: 100%;
+  filter: brightness(0.7);
+  align-self: center;
 }
 
 
