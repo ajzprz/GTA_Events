@@ -9,9 +9,14 @@ html {
   font-size: 60.2%;
   font-family: "Lato", sans-serif;
 }
+
+body{
+  color: #333 !important;
+}
+
 a {
   text-decoration: none;
-  color: black;
+  color: #333;
   font-size: 1.8rem;
 }
 
@@ -21,6 +26,10 @@ a:hover {
 
 p {
   font-size: 0.9rem;
+}
+
+h1{
+  font-size: 4rem;
 }
 
 h2 {
@@ -127,7 +136,7 @@ li {
 
 nav li:hover {
   transform: scale(1.2);
-  color: black;
+  color: #333;
   font-weight: 1000;
 }
 
@@ -486,7 +495,7 @@ button[type="submit"]:hover {
 }
 
 footer {
-  background: #1e1f1f;
+  background: #141414;
   padding: 63px 0 20px;
 }
 
