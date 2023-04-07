@@ -22,13 +22,17 @@
   <body>
     <header>
       <div class="navigation">
-        <a href="/index.html"
-          ><div class="logo">
-            <h2>Eventify</h2>
-          </div>
-        </a>
+        <input type="checkbox" class="hamburger-menu" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger"><i class="fas fa-bars"></i></label>
+        <div class="logo">
+          <a href="/index.html"> <h2>Eventify</h2> </a>
+        </div>
+        <input type="checkbox" class="user-menu" id="checkbox_toggle_login" />
+        <label for="checkbox_toggle_login" class="user"><i class="fas fa-user"></i></label>
 
+        
         <nav>
+          
           <ul>
             <li><a href="/index.html">Home</a></li>
             <li><a href="/events.html">Events</a></li>
@@ -46,19 +50,13 @@
     </header>
 
     <main>
-      <div class="responsive-header">
-        <img src="img/Hamburger_icon.svg.png" alt="" />
-        <img class="logo" src="img/logo.png" alt="logo" />
-        <img src="img/icons8-user-30.png" alt="" />
-      </div>
-
       <div class="banner">
         <video
           loop
           muted
           autoplay
           class="banner-video"
-          src="img/istockphoto-1353384232-640_adpp_is.mp4"
+          src="img/People Launching Air Lanterns At Night - Free HD Video Clips & Stock Video Footage at Videezy!.mp4"
         ></video>
 
         <div class="overlay">
@@ -227,7 +225,34 @@
           </div>
         </div>
       </section>
-      <section id="contact-us"></section>
+
+      <section class="contact-us">
+        <div class="section-header">
+          <h2>Contact Us</h2>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-left">
+              <h3>Learn More!</h3>
+              <p>
+                Get in touch with us to learn more about our services and how we
+                can help you achieve your goals.
+              </p>
+            </div>
+            <div class="col-right">
+              <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="color-white flex-row">
@@ -236,14 +261,13 @@
           <h2>Eventify</h2>
         </div>
         <h5>Get the app and to see events on the go</h5>
-        <div class="social-links">
-          <a href="">
+        <div class="social-links app-store">
+          <a href="https://play.google.com/">
             <i class="fab fa-android"></i>
           </a>
-          <a href="">
+          <a href="https://www.apple.com/ca/app-store/">
             <i class="fab fa-apple"></i>
           </a>
-
         </div>
       </div>
       <div class="footer-one flex-column">
@@ -274,7 +298,7 @@
         <h3>Find Us On</h3>
         <div class="social-links">
           <a href="https://www.facebook.com/">
-            <i class="fab fa-facebook"></i>
+            <i class="fab fa-facebook-square"></i>
           </a>
           <a href="https://twitter.com/">
             <i class="fab fa-twitter"></i>

@@ -29,7 +29,7 @@ h2 {
   font-size: 3rem;
 }
 
-h3{
+h3 {
   font-size: 2rem;
 }
 
@@ -37,7 +37,7 @@ h5 {
   font-size: 1.5rem;
 }
 
-h6{
+h6 {
   font-size: 1rem;
 }
 
@@ -57,12 +57,7 @@ h6{
 }
 
 section {
-  padding: 20px 0;
-  background-color: aliceblue;
-}
-
-#container {
-  margin: 0 200px;
+  padding: 12px 0;
 }
 
 header {
@@ -89,10 +84,32 @@ header {
   /* background-color: rgb(218, 55, 55); */
 }
 
+.logo h2 {
+  transition: 0.4s ease;
+}
+
+.logo:hover h2 {
+  transform: scale(1.1);
+  color: #007bff;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+
 nav {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.hamburger {
+  display: none;
+}
+
+.user{
+  display: none;
 }
 
 nav ul {
@@ -302,6 +319,7 @@ select > option {
   opacity: 0.9;
   position: relative;
   z-index: 100;
+  /* flex-basis: 16%; */
 }
 
 .categories-overlay {
@@ -365,7 +383,6 @@ select > option {
   width: 30%;
   height: auto;
   position: relative;
-  margin-bottom: -4px;
   opacity: 0.9;
 }
 
@@ -410,6 +427,64 @@ select > option {
   align-self: center;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-left {
+  flex-basis: 50%;
+  padding-right: 20px;
+}
+
+.col-right {
+  flex-basis: 50%;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+label {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0062cc;
+}
+
 footer {
   background: #1e1f1f;
   padding: 63px 0 20px;
@@ -436,6 +511,11 @@ footer .logo img {
   justify-content: center;
   gap: 10px;
   align-items: center;
+}
+
+.app-store i {
+  font-size: 4rem;
+  margin-right: 10px;
 }
 
 .social-links a {
