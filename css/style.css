@@ -1,74 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Lato:wght@100;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Lato:wght@100&display=swap");
-* {
-  box-sizing: border-box;
-  padding: 0;
-}
-
-html {
-  font-size: 60.2%;
-  font-family: "Lato", sans-serif;
-}
-
-body{
-  color: #333 !important;
-}
-
-a {
-  text-decoration: none;
-  color: #333;
-  font-size: 1.8rem;
-}
-
-a:hover {
-  font-weight: bolder;
-}
-
-p {
-  font-size: 0.9rem;
-}
-
-h1{
-  font-size: 4rem;
-}
-
-h2 {
-  margin: 20px;
-  padding: 0;
-  font-size: 3rem;
-}
-
-h3 {
-  font-size: 2rem;
-}
-
-h5 {
-  font-size: 1.5rem;
-}
-
-h6 {
-  font-size: 1rem;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.flex-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.color-white {
-  color: white;
-}
-
-section {
-  padding: 12px 0;
-}
-
 header {
   margin-bottom: 10px;
   position: fixed;
@@ -106,7 +35,6 @@ input[type="checkbox"] {
   display: none;
 }
 
-
 nav {
   display: flex;
   justify-content: center;
@@ -117,7 +45,7 @@ nav {
   display: none;
 }
 
-.user{
+.user {
   display: none;
 }
 
@@ -136,7 +64,7 @@ li {
 
 nav li:hover {
   transform: scale(1.2);
-  color: #333;
+  color: #333232;
   font-weight: 1000;
 }
 
@@ -283,16 +211,16 @@ select > option {
   padding: 5px;
 }
 
-.section-header h2::before {
+/* .section-header h2::before {
   width: 8%;
   height: 30px;
   content: "";
   top: 0;
   left: 46%;
-  border-top: 10px rgb(80, 98, 122) solid;
+  border-top: 10px #333 solid;
   border-radius: 30%;
   position: absolute;
-}
+} */
 
 .what-we-do {
   text-align: center;
@@ -345,6 +273,10 @@ select > option {
   transition: 1s ease;
 }
 
+.categories a {
+  text-align: center;
+}
+
 .categories p {
   color: white;
   overflow: hidden;
@@ -359,16 +291,19 @@ select > option {
   width: 100%;
   height: 100%;
   filter: brightness(0.6);
+  position: relative;
 }
 
 .categories-box span {
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
   position: absolute;
-  font-size: larger;
-  top: 40%;
-  left: 40%;
-  transform: translate(10%, 10%);
+  font-size: 2.4rem;
+  top: 0;
+  left: 0;
+  transform: translate(0%, 40%);
   color: aliceblue;
   font-family: "Belleza", sans-serif;
   transition: 1s ease;
@@ -395,6 +330,10 @@ select > option {
   opacity: 0.9;
 }
 
+.featured-boxes a {
+  text-align: center;
+}
+
 .featured-boxes p {
   color: white;
 }
@@ -404,9 +343,10 @@ select > option {
 }
 
 .featured-boxes span {
+  width: 100%;
   position: absolute;
   top: 43%;
-  left: 40%;
+  left: 0%;
   z-index: 0;
   font-size: 20px;
   color: aliceblue;
@@ -414,7 +354,7 @@ select > option {
 
 .featured-overlay {
   width: 100%;
-  height: 0%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.712);
   position: absolute;
   top: 0;
@@ -422,6 +362,24 @@ select > option {
   z-index: 1;
   opacity: 0;
   transition: 1s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.featured-overlay button {
+  align-self: center;
+  border: none;
+  font-size: 12px;
+  background-color: #a0c800;
+  padding: 20px;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: rgb(184, 119, 0);
+  border: none;
 }
 
 .featured-boxes a:hover .featured-overlay {

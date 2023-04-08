@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Lato:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Lato:wght@100&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html {
+  font-size: 60.2%;
+  font-family: "Lato", sans-serif;
+}
+
+body{
+  color: #333 !important;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+a:hover {
+  font-weight: bolder;
+}
+
+a:active{
+  color: #1f1f1f;
+}
+
+p {
+  font-size: 1.7rem;
+}
+
+h1{
+  font-size: 4rem;
+}
+
+h2 {
+  margin: 20px;
+  padding: 0;
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4{
+    font-size: 1.7rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.color-white {
+  color: white;
+}
+
+section {
+  padding: 12px 0;
+}
