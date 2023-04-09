@@ -53,11 +53,23 @@
   .featured-boxes {
     width: 40%;
   }
+
+  .row{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .col-right{
+    width: 100%;
+  }
+  .col-right form{
+    width: 100%;
+  }
 }
 
 /*For Smaller View Port smart phones  */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 758px) {
   html {
     font-size: 50%;
   }
@@ -71,8 +83,6 @@
   */ .hamburger {
     display: flex;
   }
-
- 
 
   .navigation {
     margin: 20px;

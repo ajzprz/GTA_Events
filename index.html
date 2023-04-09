@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fair Trade Limited</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -111,7 +114,7 @@
           <div class="categories-box">
             <a href="">
               <div class="categories-overlay">
-                <p>Lorem ipsum, dolor</p>
+                <p>Find Out More</p>
               </div>
               <img src="img/event-01.jpg" alt="event-01" />
               <span>Corporate Events</span>
@@ -120,7 +123,7 @@
           <div class="categories-box">
             <a href="">
               <div class="categories-overlay">
-                <p>Lorem ipsum, dolor</p>
+                <p>Find Out More</p>
               </div>
               <img src="img/event-02.jpg" alt="event-02" />
               <span>Parties</span>
@@ -129,7 +132,7 @@
           <div class="categories-box">
             <a href="">
               <div class="categories-overlay">
-                <p>Lorem ipsum, dolor</p>
+                <p>Find Out More</p>
               </div>
               <img src="img/event-03.jpg" alt="event-03" />
               <span>Banquets</span>
@@ -138,7 +141,7 @@
           <div class="categories-box">
             <a href="">
               <div class="categories-overlay">
-                <p>Lorem ipsum, dolor</p>
+                <p>Find Out More</p>
               </div>
               <img src="img/event-04.jpg" alt="event-04" />
               <span>Threatre</span>
@@ -147,7 +150,7 @@
           <div class="categories-box">
             <a href="">
               <div class="categories-overlay">
-                <p>Lorem ipsum, dolor</p>
+                <p>Find Out More</p>
               </div>
               <img src="img/event-05.jpg" alt="event-05" />
               <span>Carnivals</span>
@@ -156,7 +159,7 @@
           <div class="categories-box">
             <a href="">
               <div class="categories-overlay">
-                <p>Lorem ipsum, dolor</p>
+                <p>Find Out More</p>
               </div>
               <img src="img/event-06.jpg" alt="event-06" />
               <span>Night Shows</span>
@@ -174,7 +177,7 @@
           <div class="featured-boxes">
             <a href="">
               <div class="featured-overlay">
-                <p>Lorem Ipsum</p>
+                <p>NIGHT PARTY</p>
                 <button>Book Now</button>
               </div>
               <img src="img/featured-01.webp" alt="featured-event-01" />
@@ -184,7 +187,7 @@
           <div class="featured-boxes">
             <a href="">
               <div class="featured-overlay">
-                <p>Lorem Ipsum</p>
+                <p>SUMMER EVENTS</p>
                 <button>Book Now</button>
               </div>
               <img src="img/featured-02.png" alt="event-02" />
@@ -194,7 +197,7 @@
           <div class="featured-boxes">
             <a href="">
               <div class="featured-overlay">
-                <p>Lorem Ipsum</p>
+                <p>DANCE PARTY</p>
                 <button>Book Now</button>
               </div>
               <img src="img/featured-03.webp" alt="event-03" />
@@ -204,7 +207,7 @@
           <div class="featured-boxes">
             <a href="">
               <div class="featured-overlay">
-                <p>Lorem Ipsum</p>
+                <p>BUSINESS GUIDE</p>
                 <button>Book Now</button>
               </div>
               <img src="img/featured-04.webp" alt="event-04" />
@@ -214,7 +217,7 @@
           <div class="featured-boxes">
             <a href="">
               <div class="featured-overlay">
-                <p>Lorem Ipsum</p>
+                <p>SECURITY GUARD EVENTS</p>
                 <button>Book Now</button>
               </div>
               <img src="img/featured-05.webp" alt="event-05" />
@@ -224,7 +227,7 @@
           <div class="featured-boxes">
             <a href="">
               <div class="featured-overlay">
-                <p>Lorem Ipsum</p>
+                <p>DANCE EVENTS</p>
                 <button>Book Now</button>
               </div>
               <img src="img/featured-06.webp" alt="event-06" />
@@ -241,11 +244,23 @@
         <div class="container">
           <div class="row">
             <div class="col-left">
-              <h3>Learn More!</h3>
-              <p>
-                Get in touch with us to learn more about our services and how we
-                can help you achieve your goals.
-              </p>
+              <div class="contact-desc">
+                <h3>Learn More!</h3>
+                <p>
+                  Get in touch with us to learn more about our services and how
+                  we can help you achieve your goals.
+                </p>
+              </div>
+              <div class="location-map">
+                <iframe
+                class="map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5838.233500535048!2d-82.35180405252227!3d42.97581423258823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8825830ada06f7cb%3A0x8f33c2e6a2ccfad1!2sLambton%20College!5e0!3m2!1sen!2sca!4v1681000812059!5m2!1sen!2sca"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
             </div>
             <div class="col-right">
               <form>
@@ -253,9 +268,11 @@
                 <input type="text" id="name" name="name" required />
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required />
+                <label for="telephone">Contact Number:</label>
+                <input type="tel" id="telephone" name="telephone" required />
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
-                <button type="submit">Submit</button>
+                <button type="submit">Send</button>
               </form>
             </div>
           </div>

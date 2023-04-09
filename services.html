@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fair Trade Limited</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/services.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -66,7 +69,7 @@
         </div>
       </section>
 
-      <section>
+      <section class="services">
         <div class="row">
           <div class="section-header">
             <h2>Our Services</h2>
@@ -157,11 +160,23 @@
         <div class="container">
           <div class="row">
             <div class="col-left">
-              <h3>Learn More!</h3>
-              <p>
-                Get in touch with us to learn more about our services and how we
-                can help you achieve your goals.
-              </p>
+              <div class="contact-desc">
+                <h3>Learn More!</h3>
+                <p>
+                  Get in touch with us to learn more about our services and how
+                  we can help you achieve your goals.
+                </p>
+              </div>
+              <div class="location-map">
+                <iframe
+                  class="map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5838.233500535048!2d-82.35180405252227!3d42.97581423258823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8825830ada06f7cb%3A0x8f33c2e6a2ccfad1!2sLambton%20College!5e0!3m2!1sen!2sca!4v1681000812059!5m2!1sen!2sca"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
             </div>
             <div class="col-right">
               <form>
@@ -169,15 +184,18 @@
                 <input type="text" id="name" name="name" required />
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required />
+                <label for="telephone">Contact Number:</label>
+                <input type="tel" id="telephone" name="telephone" required />
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
-                <button type="submit">Submit</button>
+                <button type="submit">Send</button>
               </form>
             </div>
           </div>
         </div>
       </section>
 
+      <section></section>
     </main>
 
     <footer class="color-white flex-row">
