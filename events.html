@@ -10,11 +10,9 @@
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link
-      rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="css/services.css" />
     <link rel="stylesheet" href="css/eventsStyle.css" />
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -24,17 +22,7 @@
     <script
       src="https://kit.fontawesome.com/22e71b5156.js"
       crossorigin="anonymous"
-    >
-      function openNav() {
-          document.getElementById("mySidenav").style.width = "250px";
-          document.getElementById("main").style.marginLeft = "250px";
-      }
-
-      function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
-          document.getElementById("main").style.marginLeft = "0";
-      }
-    </script>
+    ></script>
   </head>
 
   <body>
@@ -68,152 +56,257 @@
       </div>
     </header>
 
-    <main>
-      <section>
-        <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-            >&times;</a
-          >
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Clients</a>
-          <a href="#">Contact</a>
+    <main></main>
+    <section>
+      <div class="banner-events">
+        <div class="wrapper">
+          <h2 class="banner-title">
+            Your All-in-one Source for Event Rentals in Toronto
+          </h2>
+          <h4 class="banner-subtitle">
+            We specialize in unique party rentals for your corporate events.
+          </h4>
         </div>
-        <span style="font-size: 20px; cursor: pointer" onclick="openNav()"
-          >&#9776; Filters</span
-        >
-        <div class="gallery">
-          <div>
-            <img src="img/event-01.jpg" alt="" />
-          </div>
-          <div class="v-stretch">
-            <img src="img/event-02.jpg" alt="" />
-          </div>
-          <div class="h-stretch">
-            <img src="img/event-03.jpg" alt="" />
-          </div>
-          <div>
-            <img src="img/event-04.jpg" alt="" />
-          </div>
-          <div>
-            <img src="img/event-05.jpg" alt="" />
-          </div>
-          <div class="v-stretch">
-            <img src="img/event-06.jpg" alt="" />
-          </div>
-          <div class="big-stretch">
-            <img src="img/event-01.jpg" alt="" />
-          </div>
-          <div>
-            <img src="img/event-02.jpg" alt="" />
-          </div>
-          <div class="h-stretch">
-            <img src="img/event-03.jpg" alt="" />
-          </div>
-          <div>
-            <img src="img/event-04.jpg" alt="" />
-          </div>
-          <div>
-            <img src="img/event-05.jpg" alt="" />
-          </div>
-          <div>
-            <img src="img/event-06.jpg" alt="" />
-          </div>
-          <div class="v-stretch">
-            <img src="img/event-01.jpg" alt="" />
-          </div>
-          <div>
-            <img src="img/event-02.jpg" alt="" />
-          </div>
-          <div class="big-stretch">
-            <img src="img/event-03.jpg" alt="" />
-          </div>
-          <div>
-            <img src="img/event-04.jpg" alt="" />
-          </div>
-          <div class="h-stretch">
-            <img src="img/event-05.jpg" alt="" />
-          </div>
-          <div>
-            <img src="img/event-06.jpg" alt="" />
-          </div>
-          <div class="big-stretch">
-            <img src="img/event-01.jpg" alt="" />
-          </div>
-          <div>
-            <img src="img/event-02.jpg" alt="" />
-          </div>
-          <div>
-            <img src="img/event-03.jpg" alt="" />
-          </div>
-          <div></div>
-        </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <div id="content">
-      <div class="filter-menu">
-        <h2>Filter Menu</h2>
-        <form>
-          <label for="category">Category:</label>
-          <select id="category" name="category">
-            <option value="all">All</option>
-            <option value="category1">Category 1</option>
-            <option value="category2">Category 2</option>
-            <option value="category3">Category 3</option>
-          </select>
-          <label for="price">Price:</label>
-          <select id="price" name="price">
-            <option value="all">All</option>
-            <option value="price1">Price 1</option>
-            <option value="price2">Price 2</option>
-            <option value="price3">Price 3</option>
-          </select>
-          <button type="submit">Filter</button>
-        </form>
+    <section>
+      <div class="section-header">
+        <h2>Upcoming Events</h2>
       </div>
-      <div class="left">
-        <div id="filter-left">
-          <div>Filter</div>
-        </div>
-      </div>
-      -->
-      <div class="right">
-        <div id="events-content">
-          <h1 id="parties">Parties</h1>
-          <div class="party-event">
-            <img
-              src="img/boat-festival.jpg"
-              alt="Boat Party Festival"
-              class="image"
-              height="180"
-              width="450"
-            />
+      <div class="row">
+        <div class="col-left">
+          <!-- <span style="font-size: 20px; cursor: pointer" onclick="openNav()"
+            >&#9776; Filters</span
+          > -->
+          <div class="filter">
+            <h2>Filter Menu</h2>
+            <form class="filter-menu">
+              <div class="flex-row">
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+                  <option value="all">All</option>
+                  <option value="category1">Corporate Events</option>
+                  <option value="category2">Parties</option>
+                  <option value="category3">Fairs</option>
+                  <option value="category3"></option>
+                </select>
+              </div>
+              <div class="flex-row">
+                <label for="category">Location:</label>
+                <select id="category" name="category">
+                  <option value="all">All</option>
+                  <option value="category1">Downtown</option>
+                  <option value="category2">North York</option>
+                  <option value="category3">Markham</option>
+                </select>
+              </div>
+              <div class="flex-row">
+                <label for="data">Date:</label>
+                <input type="date" name="" id="" />
+              </div>
+              <div class="flex-row">
+                <label for="price">Price:</label>
+                <div class="range-slider">
+                  <input
+                    type="range"
+                    class="min-price"
+                    value="100"
+                    min="10"
+                    max="500"
+                    step="10"
+                  />
+                </div>
+              </div>
+              <button type="submit">Filter</button>
+            </form>
           </div>
+        </div>
 
-          <div class="categories-box">
-            <a href="">
-              <div class="categories-overlay">
-                <h1>
-                  Boat Party Festival on 25th May 2023 at 7pm in Toronto, ON
-                </h1>
+        <div class="col-right">
+          <div class="events">
+            <div class="events-card">
+              <h4>Boat Party Festival</h4>
+              <div class="card-img">
+                <img src="/img/featured-02.jpg" alt="Boat Party Festival" />
               </div>
-              <img src="img/boat-festival.jpg" alt="Boat Party Festival" />
-              <span>Boat Party Festival</span>
-            </a>
-            <a href="">
-              <div class="categories-overlay">
-                <h1>
-                  Boat Party Festival on 25th May 2023 at 7pm in Toronto, ON
-                </h1>
+              <div class="events-details">
+                <p>Location: Markham</p>
+                <p>Day: 13th April</p>
+                <p>Time: 12pm -5pm</p>
+                <p>Ticket Price: $40</p>
               </div>
-              <img src="img/boat-festival.jpg" alt="Boat Party Festival" />
-              <span>Boat Party Festival</span>
-            </a>
+              <button class="get-tickets">Get Ticketes</button>
+            </div>
+
+            <div class="events-card">
+              <h4>Boat Party Festival</h4>
+              <div class="card-img">
+                <img src="/img/featured-02.jpg" alt="Boat Party Festival" />
+              </div>
+              <div class="events-details">
+                <p>Location: Markham</p>
+                <p>Day: 13th April</p>
+                <p>Time: 12pm -5pm</p>
+                <p>Ticket Price: $40</p>
+              </div>
+              <button class="get-tickets">Get Ticketes</button>
+            </div>
+
+            <div class="events-card">
+              <h4>Boat Party Festival</h4>
+              <div class="card-img">
+                <img src="/img/featured-02.jpg" alt="Boat Party Festival" />
+              </div>
+              <div class="events-details">
+                <p>Location: Markham</p>
+                <p>Day: 13th April</p>
+                <p>Time: 12pm -5pm</p>
+                <p>Ticket Price: $40</p>
+              </div>
+              <button class="get-tickets">Get Ticketes</button>
+            </div>
+
+            <div class="events-card">
+              <h4>Boat Party Festival</h4>
+              <div class="card-img">
+                <img src="/img/featured-02.jpg" alt="Boat Party Festival" />
+              </div>
+              <div class="events-details">
+                <p>Location: Markham</p>
+                <p>Day: 13th April</p>
+                <p>Time: 12pm -5pm</p>
+                <p>Ticket Price: $40</p>
+              </div>
+              <button class="get-tickets">Get Ticketes</button>
+            </div>
+
+            <div class="events-card">
+              <h4>Boat Party Festival</h4>
+              <div class="card-img">
+                <img src="/img/featured-02.jpg" alt="Boat Party Festival" />
+              </div>
+              <div class="events-details">
+                <p>Location: Markham</p>
+                <p>Day: 13th April</p>
+                <p>Time: 12pm -5pm</p>
+                <p>Ticket Price: $40</p>
+              </div>
+              <button class="get-tickets">Get Ticketes</button>
+            </div>
+
+            <div class="events-card">
+              <h4>Boat Party Festival</h4>
+              <div class="card-img">
+                <img src="/img/featured-02.jpg" alt="Boat Party Festival" />
+              </div>
+              <div class="events-details">
+                <p>Location: Markham</p>
+                <p>Day: 13th April</p>
+                <p>Time: 12pm -5pm</p>
+                <p>Ticket Price: $40</p>
+              </div>
+              <button class="get-tickets">Get Ticketes</button>
+            </div>
+
+            <div class="events-card">
+              <h4>Boat Party Festival</h4>
+              <div class="card-img">
+                <img src="/img/featured-02.jpg" alt="Boat Party Festival" />
+              </div>
+              <div class="events-details">
+                <p>Location: Markham</p>
+                <p>Day: 13th April</p>
+                <p>Time: 12pm -5pm</p>
+                <p>Ticket Price: $40</p>
+              </div>
+              <button class="get-tickets">Get Ticketes</button>
+            </div>
+
+            <div class="events-card">
+              <h4>Boat Party Festival</h4>
+              <div class="card-img">
+                <img src="/img/featured-02.jpg" alt="Boat Party Festival" />
+              </div>
+              <div class="events-details">
+                <p>Location: Markham</p>
+                <p>Day: 13th April</p>
+                <p>Time: 12pm -5pm</p>
+                <p>Ticket Price: $40</p>
+              </div>
+              <button class="get-tickets">Get Ticketes</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- <div class="gallery">
+            <div>
+              <img src="img/event-01.jpg" alt="" />
+            </div>
+            <div class="v-stretch">
+              <img src="img/event-02.jpg" alt="" />
+            </div>
+            <div class="h-stretch">
+              <img src="img/event-03.jpg" alt="" />
+            </div>
+            <div>
+              <img src="img/event-04.jpg" alt="" />
+            </div>
+            <div>
+              <img src="img/event-05.jpg" alt="" />
+            </div>
+            <div class="v-stretch">
+              <img src="img/event-06.jpg" alt="" />
+            </div>
+            <div class="big-stretch">
+              <img src="img/event-01.jpg" alt="" />
+            </div>
+            <div>
+              <img src="img/event-02.jpg" alt="" />
+            </div>
+            <div class="h-stretch">
+              <img src="img/event-03.jpg" alt="" />
+            </div>
+            <div>
+              <img src="img/event-04.jpg" alt="" />
+            </div>
+            <div>
+              <img src="img/event-05.jpg" alt="" />
+            </div>
+            <div>
+              <img src="img/event-06.jpg" alt="" />
+            </div>
+            <div class="v-stretch">
+              <img src="img/event-01.jpg" alt="" />
+            </div>
+            <div>
+              <img src="img/event-02.jpg" alt="" />
+            </div>
+            <div class="big-stretch">
+              <img src="img/event-03.jpg" alt="" />
+            </div>
+            <div>
+              <img src="img/event-04.jpg" alt="" />
+            </div>
+            <div class="h-stretch">
+              <img src="img/event-05.jpg" alt="" />
+            </div>
+            <div>
+              <img src="img/event-06.jpg" alt="" />
+            </div>
+            <div class="big-stretch">
+              <img src="img/event-01.jpg" alt="" />
+            </div>
+            <div>
+              <img src="img/event-02.jpg" alt="" />
+            </div>
+            <div>
+              <img src="img/event-03.jpg" alt="" />
+            </div>
+            <div></div>
+          </div> -->
 
     <footer class="color-white flex-row">
       <div class="footer-one flex-column">

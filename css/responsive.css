@@ -266,4 +266,12 @@
   .social-links{
     flex-direction: column;
   }
+
+  .row{
+    flex-direction: column;
+  }
+
+  .events{
+    flex-direction: column !important;
+  }
 }
