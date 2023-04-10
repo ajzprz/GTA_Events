@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,110 +11,248 @@
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/eventsStyle.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-Hy5DkNPp9tNjXN1zPUbTpIvJfZCBTno4bRXgq+PrmL3fJvHVKCmX9OVdWZA+8JvL" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/22e71b5156.js" crossorigin="anonymous">
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
 
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-      integrity="sha384-Hy5DkNPp9tNjXN1zPUbTpIvJfZCBTno4bRXgq+PrmL3fJvHVKCmX9OVdWZA+8JvL"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://kit.fontawesome.com/22e71b5156.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+</head>
 
-  <body>
+<body>
     <header>
-      <div class="navigation">
-        <input type="checkbox" class="hamburger-menu" id="checkbox_toggle" />
-        <label for="checkbox_toggle" class="hamburger"
-          ><i class="fas fa-bars"></i
-        ></label>
-        <div class="logo">
-          <a href="/index.html"> <h2>Eventify</h2> </a>
-        </div>
-        <input type="checkbox" class="user-menu" id="checkbox_toggle_login" />
-        <label for="checkbox_toggle_login" class="user"
-          ><i class="fas fa-user"></i
-        ></label>
-        <nav>
-          <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/events.html">Events</a></li>
-            <li><a href="/services.html">Services</a></li>
-            <li><a href="/about_us.html">About Us</a></li>
-            <li><a href="/contact_us.html">Contact US</a></li>
-          </ul>
-        </nav>
+        <div class="navigation">
+            <input type="checkbox" class="hamburger-menu" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger"><i class="fas fa-bars"></i></label>
+            <div class="logo">
+                <a href="/index.html">
+                    <h2>Eventify</h2>
+                </a>
+            </div>
+            <input type="checkbox" class="user-menu" id="checkbox_toggle_login" />
+            <label for="checkbox_toggle_login" class="user"><i class="fas fa-user"></i></label>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/events.html">Events</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/about_us.html">About Us</a></li>
+                    <li><a href="/contact_us.html">Contact US</a></li>
+                </ul>
+            </nav>
 
-        <div class="user-account">
-          <a href="/login.html">Login</a>
-          <a href="/register.html">Register</a>
-        </div>
-      </div>
+
+            <div class="user-account">
+                <a href="">Login</a>
+                <a href="">Register</a>
+            </div>
     </header>
+    <div class="responsive-header">
+        <img src="img/Hamburger_icon.svg.png" alt="" />
 
-    <main>
-      <h1>Events Section</h1>
-    </main>
+        <img class="logo" src="img/logo.png" alt="logo" />
+        <img src="img/icons8-user-30.png" alt="" />
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    <div id="main">
+        <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; Filters</span>
+        <div class="gallery">
+            <div>
+                <img src="img/event-01.jpg" alt="">
+            </div>
+            <div class="v-stretch">
+                <img src="img/event-02.jpg" alt="">
+            </div>
+            <div class="h-stretch">
+                <img src="img/event-03.jpg" alt="">
+            </div>
+            <div>
+                <img src="img/event-04.jpg" alt="">
+            </div>
+            <div>
+                <img src="img/event-05.jpg" alt="">
+            </div>
+            <div class="v-stretch">
+                <img src="img/event-06.jpg" alt="">
+            </div>
+            <div class="big-stretch">
+                <img src="img/event-01.jpg" alt="">
+            </div>
+            <div>
+                <img src="img/event-02.jpg" alt="">
+            </div>
+            <div class="h-stretch">
+                <img src="img/event-03.jpg" alt="">
+            </div>
+            <div>
+                <img src="img/event-04.jpg" alt="">
+            </div>
+            <div>
+                <img src="img/event-05.jpg" alt="">
+            </div>
+            <div>
+                <img src="img/event-06.jpg" alt="">
+            </div>
+            <div class="v-stretch">
+                <img src="img/event-01.jpg" alt="">
+            </div>
+            <div>
+                <img src="img/event-02.jpg" alt="">
+            </div>
+            <div class="big-stretch">
+                <img src="img/event-03.jpg" alt="">
+            </div>
+            <div>
+                <img src="img/event-04.jpg" alt="">
+            </div>
+            <div class="h-stretch">
+                <img src="img/event-05.jpg" alt="">
+            </div>
+            <div>
+                <img src="img/event-06.jpg" alt="">
+            </div>
+            <div class="big-stretch">
+                <img src="img/event-01.jpg" alt="">
+            </div>
+            <div>
+                <img src="img/event-02.jpg" alt="">
+            </div>
+            <div>
+                <img src="img/event-03.jpg" alt="">
+            </div>
+            <div>
+            </div>
+        </div>
 
-    <footer class="color-white flex-row">
-      <div class="footer-one flex-column">
-        <div class="logo">
-          <h2>Eventify</h2>
-        </div>
-        <h5>Get the app and to see events on the go</h5>
-        <div class="social-links app-store">
-          <a href="https://play.google.com/">
-            <i class="fab fa-android"></i>
-          </a>
-          <a href="https://www.apple.com/ca/app-store/">
-            <i class="fab fa-apple"></i>
-          </a>
-        </div>
-      </div>
-      <div class="footer-one flex-column">
-        <h3>Company</h3>
-        <ul class="color-white">
-          <li><a href="">Home</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Submit a blog</a></li>
-          <li><a href="">Are You A Vendor?</a></li>
-          <li><a href="">Meet The Team</a></li>
-          <li><a href="">Privacy Policy</a></li>
-        </ul>
-      </div>
-      <div class="footer-one flex-column">
-        <h3>Vendors</h3>
-        <ul class="color-white">
-          <li><a href="">Venues</a></li>
-          <li><a href="">Caterers</a></li>
-          <li><a href="">Event</a></li>
-          <li><a href="">Planners</a></li>
-          <li><a href="">Photographers</a></li>
-          <li><a href="">Videographers</a></li>
-          <li><a href="">Music Decor & Rentals</a></li>
-        </ul>
-      </div>
 
-      <div class="footer-one flex-column">
-        <h3>Find Us On</h3>
-        <div class="social-links">
-          <a href="https://www.facebook.com/">
-            <i class="fab fa-facebook-square"></i>
-          </a>
-          <a href="https://twitter.com/">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="https://www.instagram.com/">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://www.linkedin.com/">
-            <i class="fab fa-linkedin"></i>
-          </a>
+        <!-- <div id="content">
+        <div class="filter-menu">
+            <h2>Filter Menu</h2>
+            <form>
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+                    <option value="all">All</option>
+                    <option value="category1">Category 1</option>
+                    <option value="category2">Category 2</option>
+                    <option value="category3">Category 3</option>
+                </select>
+                <label for="price">Price:</label>
+                <select id="price" name="price">
+                    <option value="all">All</option>
+                    <option value="price1">Price 1</option>
+                    <option value="price2">Price 2</option>
+                    <option value="price3">Price 3</option>
+                </select>
+                <button type="submit">Filter</button>
+            </form>
         </div>
-      </div>
-    </footer>
-  </body>
+        <div class="left">
+            <div id="filter-left">
+                <div>Filter</div>
+            </div>
+        </div> -->
+        <!-- <div class="right">
+            <div id="events-content">
+                <h1 id="parties">Parties</h1>
+                <div class="party-event">
+                    <img src="img/boat-festival.jpg" alt="Boat Party Festival" class="image" height="180" width="450">
+                   
+                </div>
+
+                
+                <div class="categories-box">
+                    <a href="">
+                      <div class="categories-overlay">
+                        <h1>Boat Party Festival on 25th May 2023 at 7pm in Toronto, ON </h1>
+                      </div>
+                      <img src="img/boat-festival.jpg" alt="Boat Party Festival" />
+                      <span>Boat Party Festival</span> 
+                    </a>
+                    <a href="">
+                      <div class="categories-overlay">
+                        <h1>Boat Party Festival on 25th May 2023 at 7pm in Toronto, ON </h1>
+                      </div>
+                      <img src="img/boat-festival.jpg" alt="Boat Party Festival" />
+                      <span>Boat Party Festival</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+        <footer class="color-white flex-row">
+            <div class="footer-one flex-column">
+                <div class="logo">
+                    <h2>Eventify</h2>
+                </div>
+                <h5>Get the app and to see events on the go</h5>
+                <div class="social-links app-store">
+                    <a href="https://play.google.com/">
+                        <i class="fab fa-android"></i>
+                    </a>
+                    <a href="https://www.apple.com/ca/app-store/">
+                        <i class="fab fa-apple"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-one flex-column">
+                <h3>Company</h3>
+                <ul class="color-white">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Submit a blog</a></li>
+                    <li><a href="">Are You A Vendor?</a></li>
+                    <li><a href="">Meet The Team</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-one flex-column">
+                <h3>Vendors</h3>
+                <ul class="color-white">
+                    <li><a href="">Venues</a></li>
+                    <li><a href="">Caterers</a></li>
+                    <li><a href="">Event</a></li>
+                    <li><a href="">Planners</a></li>
+                    <li><a href="">Photographers</a></li>
+                    <li><a href="">Videographers</a></li>
+                    <li><a href="">Music Decor & Rentals</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-one flex-column">
+                <h3>Find Us On</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="https://twitter.com/">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+</body>
+
 </html>
