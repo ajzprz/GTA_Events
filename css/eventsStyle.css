@@ -118,6 +118,22 @@ select{
     width: 50%;
 }
 
+.responsiveMap{
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+.social-links{
+    display: inline;
+    margin: 15px 50px 15px 0;
+}
+.contact-map:hover .responsiveMap{
+    background-color: #C37500;
+    opacity:0.3 !important;
+    filter:alpha(opacity=70) !important;
+    box-shadow: 0 0 0px #6035eb
+  }
+
 
 
 
