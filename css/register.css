@@ -1,0 +1,46 @@
+.row{
+    gap: 0;
+}
+
+.login-box{
+    flex-basis: 50%;
+    padding: 0px 50px;
+    border:1px solid #333;
+}
+
+.login-register{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.login-register input{
+    width: 100%;
+    padding: 10px;
+}
+
+.right-box{
+    flex-basis: 50%;
+    background-color: #333;
+    width: 100%;
+}
+
+.register{
+    flex-basis: 50%;
+}
+
+.remember-me input{
+    width: 5%;
+}
+
+input[type="submit"]{
+    width: fit-content;
+    padding: 10px;
+    align-self: center;
+    margin: 20px;
+}
+.gender input[type="radio"]{
+    width: fit-content;
+}
+
+

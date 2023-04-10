@@ -78,3 +78,19 @@ h6 {
 section {
   padding: 10px 0;
 }
+
+.text-justify{
+  text-align: justify !important;
+}
+
+.display-block{
+  display: block !important;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.space-between{
+  justify-content: space-between;
+}
