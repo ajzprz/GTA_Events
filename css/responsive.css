@@ -274,4 +274,9 @@
   .events{
     flex-direction: column !important;
   }
+
+  .customers{
+    font-size: 1rem !important;
+
+  }
 }
