@@ -6,14 +6,14 @@
   background-size: cover;
 }
 
-.col-left {
+.event-left {
   flex-basis: 15%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   height: fit-content;
 }
 
-.filter{
-    padding: 20px;
+.filter {
+  padding: 20px;
 }
 
 .filter-menu {
@@ -29,95 +29,56 @@
   padding: 10px 20px;
 }
 
-.col-right {
-  flex-basis:85%;
+.event-right {
+  flex-basis: 85%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  
 }
 
-.events{ 
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
+.events {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .events-card {
-    flex-basis: 30%;
-    /* width: 25%; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    box-shadow: 3px 3px 3px 3px rgba(128, 0, 0, 0.4);
+  flex-basis: 30%;
+  /* width: 25%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 3px 3px 3px 3px rgba(128, 0, 0, 0.4);
 }
-
 
 .events-card img {
   height: auto;
   width: 100%;
 }
 
-.events-details{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
+.events-details {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.events-details p{
- font-size: 1.5rem;
+.events-details p {
+  font-size: 1.5rem;
 }
 
-.get-tickets{
-    background-color: chocolate;
-    padding: 10px 20px;
-}
-/* 
-.range-slider {
-    width: 400px;
-    position: relative;
-    margin: 15px 0 30px 0;
-  }
-  
-  input[type=range] {
-    width: 100%;
-    background: transparent; 
-    position: absolute;
-    left: 0;
-  }
-  
-  input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    background: #36b37e;
-    cursor: pointer;
-    margin-top: -5px;
-    position: relative;
-    z-index: 1;
-  }
-  
-  input[type=range]::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 5px;
-    background: #e8e8e8;
-    border-radius: 3px;
-    border: none;
-  } */
-
-  input[type="date"]{
-    width: 50%;
-    padding: 10px 20px;
+.get-tickets {
+  background-color: chocolate;
+  padding: 10px 20px;
 }
 
-select{
-    width: 50%;
+input[type="date"] {
+  width: 50%;
+  padding: 10px 20px;
 }
 
-
-
-
+select {
+  width: 50%;
+}
