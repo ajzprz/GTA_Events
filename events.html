@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<!-- This Front End Final Project was Created by Group 1 -->
+<!-- Ajaya Prajapati (C0886029)-->
+<!-- Angrej Singh (C0884026) -->
+<!-- Manmeet Kaur (C0884039) -->
+<!-- Ravleen Kaur (C0886426) -->
+<!-- Riya Sidhu(C0886435)  -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,7 +17,7 @@
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/services.css" />
-    <link rel="stylesheet" href="css/eventsStyle.css" />
+    <link rel="stylesheet" href="css/events.css" />
 
     <link
       rel="stylesheet"
@@ -85,12 +91,11 @@
                   <option value="category1">Corporate Events</option>
                   <option value="category2">Parties</option>
                   <option value="category3">Fairs</option>
-                  <option value="category3"></option>
                 </select>
               </div>
               <div class="flex-row">
-                <label for="category">Location:</label>
-                <select id="category" name="category">
+                <label for="category-location">Location:</label>
+                <select id="category-location" name="category-location">
                   <option value="all">All</option>
                   <option value="category1">Downtown</option>
                   <option value="category2">North York</option>
@@ -98,13 +103,14 @@
                 </select>
               </div>
               <div class="flex-row">
-                <label for="data">Date:</label>
-                <input type="date" name="" id="" />
+                <label for="date">Date:</label>
+                <input type="date" name="a" id="date" />
               </div>
               <div class="flex-row">
                 <label for="price">Price:</label>
                 <div class="range-slider">
                   <input
+                  id="price"
                     type="range"
                     class="min-price"
                     value="100"
@@ -124,7 +130,11 @@
             <div class="events-card">
               <h4>Music Festival</h4>
               <div class="card-img">
-                <img src="img\music-festival.jpg" alt="Music Festival" />
+                <img
+                  src="img/music-festival.jpg"
+                  style="width: 200px; height: 200px"
+                  alt="MusicFestival"
+                />
               </div>
               <div class="events-details">
                 <p>Location: Toronto</p>
@@ -138,7 +148,11 @@
             <div class="events-card">
               <h4>Boat Party Festival</h4>
               <div class="card-img">
-                <img src="img\boat-festival.jpg" alt="Boat Party Festival" />
+                <img
+                  src="img/boat-festival.jpg"
+                  style="width: 200px; height: 200px"
+                  alt="BoatPartyFestival"
+                />
               </div>
               <div class="events-details">
                 <p>Location: Hamilton</p>
@@ -152,7 +166,11 @@
             <div class="events-card">
               <h4>Bollywood Party</h4>
               <div class="card-img">
-                <img src="img\bollywood-party.jpg" alt="Bollywood Party" />
+                <img
+                  src="img/bollywood-party.jpg"
+                  style="width: 200px; height: 200px"
+                  alt="BollywoodParty"
+                />
               </div>
               <div class="events-details">
                 <p>Location: Mississauga</p>
@@ -166,7 +184,11 @@
             <div class="events-card">
               <h4>Ice Skating</h4>
               <div class="card-img">
-                <img src="img\ice-skating.PNG" alt="Ice Skating" />
+                <img
+                  src="img/ice-skating.PNG"
+                  style="width: 200px; height: 200px"
+                  alt="IceSkating"
+                />
               </div>
               <div class="events-details">
                 <p>Location: North York</p>
@@ -180,7 +202,11 @@
             <div class="events-card">
               <h4>Standup Comedy</h4>
               <div class="card-img">
-                <img src="img\standup-comedy.jpg" alt="Standup Comedy" />
+                <img
+                  src="img/standup-comedy.jpg"
+                  style="width: 200px; height: 200px"
+                  alt="StandupComedy"
+                />
               </div>
               <div class="events-details">
                 <p>Location: Etobicoke</p>
@@ -194,7 +220,11 @@
             <div class="events-card">
               <h4>Spring Festival</h4>
               <div class="card-img">
-                <img src="img\spring-festival.jpg" alt="Spring Festival" />
+                <img
+                  src="img/spring-festival.jpg"
+                  style="width: 200px; height: 200px"
+                  alt="SpringFestival"
+                />
               </div>
               <div class="events-details">
                 <p>Location: Mississauga</p>
@@ -208,7 +238,11 @@
             <div class="events-card">
               <h4>Job Fair Event</h4>
               <div class="card-img">
-                <img src="img\job-fair.png" alt="Job Fair Event" />
+                <img
+                  src="img/job-fair.png"
+                  style="width: 200px; height: 200px"
+                  alt="JobFairEvent"
+                />
               </div>
               <div class="events-details">
                 <p>Location: Brampton</p>
@@ -222,7 +256,11 @@
             <div class="events-card">
               <h4>Pillow Fight Event</h4>
               <div class="card-img">
-                <img src="img\pillow-fight.jpg" alt="Pillow Fight Event" />
+                <img
+                  src="img/pillow-fight.jpg"
+                  style="width: 200px; height: 200px"
+                  alt="PillowFightEvent"
+                />
               </div>
               <div class="events-details">
                 <p>Location: Toronto</p>
@@ -236,7 +274,11 @@
             <div class="events-card">
               <h4>Easter Party</h4>
               <div class="card-img">
-                <img src="img\easter-party.jpg" alt="Easter Party" />
+                <img
+                  src="img/easter-party.jpg"
+                  style="width: 200px; height: 200px"
+                  alt="EasterParty"
+                />
               </div>
               <div class="events-details">
                 <p>Location: Scarborough</p>
@@ -257,12 +299,39 @@
       </div>
       <div class="container">
         <div class="row">
+          <div class="contact-links">
+            <div class="phone">
+              <a href="tel:+123456789">
+                <i class="fa fa-phone"></i>
+                <h4>+47 333 78 901</h4>
+              </a>
+            </div>
+            <div class="fax">
+              <a href="fax:+358.555.1234567">
+                <i class="fa fa-fax"></i>
+                <h4>+358.555.1234567</h4>
+              </a>
+            </div>
+
+            <div class="email">
+              <a href="fax:+358.555.1234567">
+                <i class="fa fa-envelope"></i>
+                <h4>info@eventify</h4></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row">
           <div class="col-left">
             <div class="contact-desc">
               <h3>Learn More!</h3>
-              <p>
-                Get in touch with us to learn more about our services and how we
-                can help you achieve your goals.
+              <p class="text-justify">
+                Eventify! Events Group offers event planning services in Toronto
+                and the Greater Toronto Area since 2005. We focus on Business,
+                Marketing, Team Building, and Employee Engagement events. We
+                provide a seamless experience with event rentals, activations,
+                and corporate gifting. Our expertise ensures that clients
+                receive exceptional service and unforgettable events.
               </p>
             </div>
             <div class="location-map">
@@ -286,7 +355,7 @@
               <input type="tel" id="telephone" name="telephone" required />
               <label for="message">Message:</label>
               <textarea id="message" name="message" required></textarea>
-              <button type="submit">Send</button>
+              <button type="submit">Send Inquiry</button>
             </form>
           </div>
         </div>

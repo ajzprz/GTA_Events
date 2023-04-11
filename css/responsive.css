@@ -69,7 +69,7 @@
   }
 
   .events-card {
-    flex-basis: none;
+    flex-basis: auto;
   }
 }
 
@@ -281,5 +281,12 @@
 
   .customers {
     font-size: 1rem !important;
+  }
+  .contact-links {
+    gap: 20px;
+  }
+
+  .contact-links i{
+    font-size: 2rem;
   }
 }

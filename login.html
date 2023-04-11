@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<!-- This Front End Final Project was Created by Group 1 -->
+<!-- Ajaya Prajapati (C0886029)-->
+<!-- Angrej Singh (C0884026) -->
+<!-- Manmeet Kaur (C0884039) -->
+<!-- Ravleen Kaur (C0886426) -->
+<!-- Riya Sidhu(C0886435)  -->
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -45,7 +52,7 @@
             <li><a href="/events.html">Events</a></li>
             <li><a href="/services.html">Services</a></li>
             <li><a href="/about_us.html">About Us</a></li>
-            <li><a href="/contact_us.html">Contact US</a></li>
+            <li><a href="#contact-us">Contact US</a></li>
           </ul>
         </nav>
 
@@ -57,30 +64,39 @@
 
     <main>
       <section class="login">
-          <div class="row">
-            <div class="login-box">
-              <h2 class="text-center">Login</h2>
-              <form action="" class="login-register">
-                <label for="">Username</label>
-                <input type="text" name="" id="" />
-                <label for="">Password</label>
-                <input type="password" name="" id="" />
-                <div class="remember-me flex-row space-between">
-                  <label for="">Remember me?</label>
-                  <input class="display-block" type="checkbox" name="" id="" />
-                </div>
-                <a href="" class="text-center"
-                  ><label for=""> <i> Forgot password?</i></label></a
-                >
-                <input type="submit" name="" id="" value="Login" />
-              </form>
-            </div>
-            <div class="right-box">
-              <h3>Hi, There !</h3>
-              <p>Join us to become part of us !</p>
-              <button class="signup-btn"> <a href="/register.html"> Sign Up</a> </button>
-            </div>
+        <div class="row">
+          <div class="login-box">
+            <h2 class="text-center">Login</h2>
+            <form action="#" class="login-register">
+              <label for="user">Username</label>
+              <input type="text" name="a" id="user" />
+              <label for="password">Password</label>
+              <input type="password" name="b" id="password" />
+              <div class="remember-me flex-row space-between">
+                <label for="rememberme">Remember me?</label>
+                <input
+                  class="display-block"
+                  type="checkbox"
+                  name="c"
+                  id="rememberme"
+                />
+              </div>
+
+              <label
+                ><a href="#" class="text-center"
+                  ><i> Forgot password?</i>
+                </a></label
+              >
+              <input type="submit" name="d" id="d" value="Login" />
+            </form>
           </div>
+          <div class="right-box">
+            <h3>Hi, There !</h3>
+            <p>Join us to become part of us !</p>
+
+            <a class="signup-btn" href="/register.html"> Sign Up</a>
+          </div>
+        </div>
       </section>
 
       <section id="contact-us" class="contact-us">
@@ -89,12 +105,39 @@
         </div>
         <div class="container">
           <div class="row">
+            <div class="contact-links">
+              <div class="phone">
+                <a href="tel:+123456789">
+                  <i class="fa fa-phone"></i>
+                  <h4>+47 333 78 901</h4>
+                </a>
+              </div>
+              <div class="fax">
+                <a href="fax:+358.555.1234567">
+                  <i class="fa fa-fax"></i>
+                  <h4>+358.555.1234567</h4>
+                </a>
+              </div>
+
+              <div class="email">
+                <a href="fax:+358.555.1234567">
+                  <i class="fa fa-envelope"></i>
+                  <h4>info@eventify</h4></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="row">
             <div class="col-left">
               <div class="contact-desc">
                 <h3>Learn More!</h3>
-                <p>
-                  Get in touch with us to learn more about our services and how
-                  we can help you achieve your goals.
+                <p class="text-justify">
+                  Eventify! Events Group offers event planning services in
+                  Toronto and the Greater Toronto Area since 2005. We focus on
+                  Business, Marketing, Team Building, and Employee Engagement
+                  events. We provide a seamless experience with event rentals,
+                  activations, and corporate gifting. Our expertise ensures that
+                  clients receive exceptional service and unforgettable events.
                 </p>
               </div>
               <div class="location-map">
@@ -118,14 +161,12 @@
                 <input type="tel" id="telephone" name="telephone" required />
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send</button>
+                <button type="submit">Send Inquiry</button>
               </form>
             </div>
           </div>
         </div>
       </section>
-
-      <section></section>
     </main>
 
     <footer class="color-white flex-row">
@@ -146,24 +187,24 @@
       <div class="footer-one flex-column">
         <h3>Company</h3>
         <ul class="color-white">
-          <li><a href="">Home</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Submit a blog</a></li>
-          <li><a href="">Are You A Vendor?</a></li>
-          <li><a href="">Meet The Team</a></li>
-          <li><a href="">Privacy Policy</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Submit a blog</a></li>
+          <li><a href="#">Are You A Vendor?</a></li>
+          <li><a href="#">Meet The Team</a></li>
+          <li><a href="#">Privacy Policy</a></li>
         </ul>
       </div>
       <div class="footer-one flex-column">
         <h3>Vendors</h3>
         <ul class="color-white">
-          <li><a href="">Venues</a></li>
-          <li><a href="">Caterers</a></li>
-          <li><a href="">Event</a></li>
-          <li><a href="">Planners</a></li>
-          <li><a href="">Photographers</a></li>
-          <li><a href="">Videographers</a></li>
-          <li><a href="">Music Decor & Rentals</a></li>
+          <li><a href="#">Venues</a></li>
+          <li><a href="#">Caterers</a></li>
+          <li><a href="#">Event</a></li>
+          <li><a href="#">Planners</a></li>
+          <li><a href="#">Photographers</a></li>
+          <li><a href="#">Videographers</a></li>
+          <li><a href="#">Music Decor & Rentals</a></li>
         </ul>
       </div>
 

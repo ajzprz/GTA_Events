@@ -8,8 +8,9 @@
   width: 100%;
   height: 400px;
   background: url("../img/our_services.jpg");
-  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .wrapper {
   height: 100%;
@@ -30,6 +31,8 @@
 
 .banner-subtitle {
   color: #ffffff;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .services .row {
@@ -37,6 +40,7 @@
   flex-wrap: wrap;
   gap: 0;
 }
+
 .column {
   width: 100%;
   padding: 0 1em 1em 1em;
@@ -138,7 +142,6 @@
   width: 100%;
   margin: auto;
   display: flex;
-  gap: 50px;
   flex-wrap: nowrap;
   justify-content: space-between;
 }

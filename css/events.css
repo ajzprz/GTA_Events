@@ -1,7 +1,7 @@
 .banner-events {
   width: 100%;
   height: 400px;
-  background: url("../img/our_services.jpg");
+  background: url("../img/events.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -53,14 +53,10 @@
   box-shadow: 3px 3px 3px 3px rgba(128, 0, 0, 0.4);
 }
 
-.events-card img {
-  height: auto;
-  width: 100%;
-}
 
 .events-details {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
 }

@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<!-- This Front End Final Project was Created by Group 1 -->
+<!-- Ajaya Prajapati (C0886029)-->
+<!-- Angrej Singh (C0884026) -->
+<!-- Manmeet Kaur (C0884039) -->
+<!-- Ravleen Kaur (C0886426) -->
+<!-- Riya Sidhu(C0886435)  -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -43,7 +49,7 @@
             <li><a href="/events.html">Events</a></li>
             <li><a href="/services.html">Services</a></li>
             <li><a href="/about_us.html">About Us</a></li>
-            <li><a href="#contactus">Contact US</a></li>
+            <li><a href="#contact-us">Contact US</a></li>
           </ul>
         </nav>
 
@@ -71,17 +77,17 @@
             </span>
 
             <form class="search-events" action="">
-              <select name="" id="">
-                <option value="">Corporate Events</option>
-                <option value="">Social Events</option>
-                <option value="">Fairs</option>
-                <option value="">Movies</option>
+              <select name="events-name" id="events">
+                <option value="co-events">Corporate Events</option>
+                <option value="so-events">Social Events</option>
+                <option value="fa-events">Fairs</option>
+                <option value="mo-events">Movies</option>
               </select>
-              <select name="" id="">
-                <option value="">Toronto</option>
-                <option value="">North York</option>
-                <option value="">Markham</option>
-                <option value="">Etobicoke</option>
+              <select name="location" id="location">
+                <option value="toronto">Toronto</option>
+                <option value="nothyork">North York</option>
+                <option value="markham">Markham</option>
+                <option value="etobicoke">Etobicoke</option>
               </select>
               <button id="btn-search-events">Search Events</button>
             </form>
@@ -243,12 +249,39 @@
         </div>
         <div class="container">
           <div class="row">
+            <div class="contact-links">
+              <div class="phone">
+                <a href="tel:+123456789">
+                  <i class="fa fa-phone"></i>
+                  <h4>+47 333 78 901</h4>
+                </a>
+              </div>
+              <div class="fax">
+                <a href="fax:+358.555.1234567">
+                  <i class="fa fa-fax"></i>
+                  <h4>+358.555.1234567</h4>
+                </a>
+              </div>
+
+              <div class="email">
+                <a href="fax:+358.555.1234567">
+                  <i class="fa fa-envelope"></i>
+                  <h4>info@eventify</h4></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="row">
             <div class="col-left">
               <div class="contact-desc">
                 <h3>Learn More!</h3>
-                <p>
-                  Get in touch with us to learn more about our services and how
-                  we can help you achieve your goals.
+                <p class="text-justify">
+                  Eventify! Events Group offers event planning services in
+                  Toronto and the Greater Toronto Area since 2005. We focus on
+                  Business, Marketing, Team Building, and Employee Engagement
+                  events. We provide a seamless experience with event rentals,
+                  activations, and corporate gifting. Our expertise ensures that
+                  clients receive exceptional service and unforgettable events.
                 </p>
               </div>
               <div class="location-map">
@@ -272,7 +305,7 @@
                 <input type="tel" id="telephone" name="telephone" required />
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send</button>
+                <button type="submit">Send Inquiry</button>
               </form>
             </div>
           </div>
@@ -298,24 +331,24 @@
       <div class="footer-one flex-column">
         <h3>Company</h3>
         <ul class="color-white">
-          <li><a href="">Home</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Submit a blog</a></li>
-          <li><a href="">Are You A Vendor?</a></li>
-          <li><a href="">Meet The Team</a></li>
-          <li><a href="">Privacy Policy</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Submit a blog</a></li>
+          <li><a href="#">Are You A Vendor?</a></li>
+          <li><a href="#">Meet The Team</a></li>
+          <li><a href="#">Privacy Policy</a></li>
         </ul>
       </div>
       <div class="footer-one flex-column">
         <h3>Vendors</h3>
         <ul class="color-white">
-          <li><a href="">Venues</a></li>
-          <li><a href="">Caterers</a></li>
-          <li><a href="">Event</a></li>
-          <li><a href="">Planners</a></li>
-          <li><a href="">Photographers</a></li>
-          <li><a href="">Videographers</a></li>
-          <li><a href="">Music Decor & Rentals</a></li>
+          <li><a href="#">Venues</a></li>
+          <li><a href="#">Caterers</a></li>
+          <li><a href="#">Event</a></li>
+          <li><a href="#">Planners</a></li>
+          <li><a href="#">Photographers</a></li>
+          <li><a href="#">Videographers</a></li>
+          <li><a href="#">Music Decor & Rentals</a></li>
         </ul>
       </div>
 
