@@ -9,11 +9,11 @@
 html {
   font-size: 60.2%;
   font-family: "Lato", sans-serif;
+  scroll-behavior: smooth !important;
 }
 
 body{
   color: #333 !important;
-  scroll-behavior: smooth;
 }
 
 a {

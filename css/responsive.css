@@ -71,6 +71,13 @@
   .events-card {
     flex-basis: auto;
   }
+  .contact-links {
+    gap: 20px;
+  }
+
+  .contact-links i{
+    font-size: 2rem;
+  }
 }
 
 /*For Smaller View Port smart phones  */
@@ -282,11 +289,5 @@
   .customers {
     font-size: 1rem !important;
   }
-  .contact-links {
-    gap: 20px;
-  }
-
-  .contact-links i{
-    font-size: 2rem;
-  }
+  
 }
