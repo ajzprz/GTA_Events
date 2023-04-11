@@ -1,6 +1,6 @@
 footer {
     background: #141414;
-    padding: 63px 0 20px;
+    padding: 60px 26px;
   }
   
   footer a {
@@ -23,16 +23,22 @@ footer {
     display: flex;
     justify-content: center;
     gap: 10px;
+    flex-direction: column;
     align-items: center;
   }
   
+  .app-store{
+    flex-direction: row;
+  }
+
   .app-store i {
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-right: 10px;
   }
   
   .social-links a {
-    font-size: 24px;
+    padding: 8px;
+    font-size: 2.6rem;
     color: #ffffff;
   }
   
