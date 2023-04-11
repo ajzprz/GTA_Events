@@ -7,7 +7,6 @@
     text-align: center;
     align-items: center;
   }
-
   nav {
     justify-content: center;
     width: 100%;
@@ -64,6 +63,14 @@
   .col-right form {
     width: 100%;
   }
+
+  .events {
+    flex-direction: column !important;
+  }
+
+  .events-card {
+    flex-basis: none;
+  }
 }
 
 /*For Smaller View Port smart phones  */
@@ -79,7 +86,8 @@
   header {
     text-align: center;
   }
-  */ .hamburger {
+
+  .hamburger {
     display: flex;
   }
 
@@ -249,12 +257,12 @@
     width: 100%;
   }
 
-  .contact-us .row{
+  .contact-us .row {
     display: flex;
     flex-direction: column;
   }
 
-  .map{
+  .map {
     height: 250px;
   }
 
@@ -263,20 +271,15 @@
     gap: 2px;
   }
 
-  .social-links{
+  .social-links {
     flex-direction: column;
   }
 
-  .row{
+  .row {
     flex-direction: column;
   }
 
-  .events{
-    flex-direction: column !important;
-  }
-
-  .customers{
+  .customers {
     font-size: 1rem !important;
-
   }
 }
