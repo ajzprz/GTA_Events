@@ -3,7 +3,7 @@
 * {
   box-sizing: border-box;
   padding: 0;
-  vertical-align: baseline;
+  vertical-align: bottom;
 }
 
 html {
@@ -73,13 +73,12 @@ button:hover {
 
 .flex-column {
   display: flex;
-  flex-direction: column;
 }
 
 .flex-row {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: initial;
+  justify-content: space-around;
 }
 
 .color-white {
